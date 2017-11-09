@@ -1,0 +1,85 @@
+[
+  {
+    "id": "1",
+    "name": "HP Pavilion 21.5-Inch IPS LED HDMI VGA Monitor",
+    "price": 99.99,
+    "url":
+      "https://www.amazon.com/gp/product/B015WCV70W/ref=s9_acsd_al_bw_c_x_1_w?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-2&pf_rd_r=8QQ6V6GB4AV21SXW5RHV&pf_rd_r=8QQ6V6GB4AV21SXW5RHV&pf_rd_t=101&pf_rd_p=1bb8a98d-f692-4d5e-a838-c02bbf5a3479&pf_rd_p=1bb8a98d-f692-4d5e-a838-c02bbf5a3479&pf_rd_i=1292115011",
+    "image": "/images/91tb3AvQSRL._SX757_.jpg",
+    "spec": [
+      "Monitor: 21.5-inch diagonal Full HD (1920x1080) IPS; Enjoy vibrant images with 178-degree wide-viewing angles.",
+      "Resolution and aspect ratio: Full HD and 16:9; 2 million pixels for crystal-clear visuals and vibrant image quality.",
+      "Response time: 7ms with overdrive; Get a smooth picture that looks crisp and fluid without motion blur.",
+      "Ports: VGA, HDMI, and HDCP support help you stay connected",
+      "Environmental features: Mercury-free LED backlighting, Arsenic-free monitor glass, and the low halogen design promote energy efficiency."
+    ]
+  },
+
+  {
+    "id": "2",
+    "name":
+      "HP 23.8-inch FHD IPS Monitor with Tilt/Height Adjustment and Built-in Speakers (VH240a, Black)",
+    "oldPrice": 149.99,
+    "price": 129.99,
+    "url":
+      "https://www.amazon.com/gp/product/B072M34RQC/ref=s9_acsd_al_bw_c_x_2_w?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-2&pf_rd_r=8QQ6V6GB4AV21SXW5RHV&pf_rd_r=8QQ6V6GB4AV21SXW5RHV&pf_rd_t=101&pf_rd_p=1bb8a98d-f692-4d5e-a838-c02bbf5a3479&pf_rd_p=1bb8a98d-f692-4d5e-a838-c02bbf5a3479&pf_rd_i=1292115011",
+    "image": "/images/81DJMwMcd5L._SX757_.jpg",
+    "spec": [
+      "Monitor: 23.8-inch diagonal Full HD (1920x1080) micro-edge IPS; An ultra-wide viewing experience provides for seamless multi-monitor set-ups.",
+      "Resolution and aspect ratio: Full HD and 16:9; 2 million pixels for crystal-clear visuals and vibrant image quality.",
+      "Response time and refresh rate: 5ms and 60Hz; Get a smooth picture that looks crisp and fluid without motion blur.",
+      "Ports: HDMI, VGA, and HDCP support help you stay connected.",
+      "Audio: integrated speakers; Get great audio built right in from the integrated speakers.",
+      "Environmental features: Mercury-free LED backlighting, Arsenic-free monitor glass, and the low-voltage halogen design promote energy efficiency."
+    ]
+  },
+
+  {
+    "id": "3",
+    "name":
+      "Acer Gaming Monitor 24\" XFA240 bmjdpr 1920 x 1080 144Hz Refresh Rate 1ms Response Time AMD FREESYNC Technology with Height, Pivot, Swivel & Tilt (Display Port, HDMI/MHL, & DVI Port)",
+    "url":
+      "https://www.amazon.com/gp/product/B06ZYHZ6R6/ref=s9_acsd_al_bw_c_x_3_w?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-2&pf_rd_r=8QQ6V6GB4AV21SXW5RHV&pf_rd_r=8QQ6V6GB4AV21SXW5RHV&pf_rd_t=101&pf_rd_p=1bb8a98d-f692-4d5e-a838-c02bbf5a3479&pf_rd_p=1bb8a98d-f692-4d5e-a838-c02bbf5a3479&pf_rd_i=1292115011",
+    "image": "/images/81NL4nYr15L._SX757_.jpg",
+    "price": 229.99,
+    "spec": [
+      "24\" Full HD (1920 x 1080) widescreen TN Display with AMD FreeSync technology",
+      "144Hz Refresh Rate- Using Display Port, Response time: 1ms",
+      "Height, Pivot, Swivel and Tilt",
+      "2 x 2W speakers",
+      "Signal inputs: 1 x Display port (V1.2), 1 x HDMI/MHL & 1 x DVI"
+    ]
+  },
+  {
+    "id": "4",
+    "name":
+      "LG 32MA70HY-P 32-Inch Full HD IPS Monitor with Display Port and HDMI Inputs",
+    "url":
+      "https://www.amazon.com/gp/product/B0755KJ56W/ref=s9_acsd_al_bw_c_x_4_w?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-2&pf_rd_r=8QQ6V6GB4AV21SXW5RHV&pf_rd_r=8QQ6V6GB4AV21SXW5RHV&pf_rd_t=101&pf_rd_p=1bb8a98d-f692-4d5e-a838-c02bbf5a3479&pf_rd_p=1bb8a98d-f692-4d5e-a838-c02bbf5a3479&pf_rd_i=1292115011",
+    "image": "/images/71%2B3Yw95jTL._SX757_.jpg",
+    "price": 199.99,
+    "spec": [
+      "32 inch full HD IPS monitor",
+      "Inputs: Display port, HDMI, d-sub",
+      "On-Screen control of monitor settings",
+      "Screen Split 2.0 for multi-tasking",
+      "Vesa-compatible for wall mounting"
+    ]
+  },
+  {
+    "id": "5",
+    "name":
+      "LG 34UC80-B 34-Inch 21:9 Curved UltraWide QHD IPS Monitor with USB Quick Charge",
+    "url":
+      "https://www.amazon.com/gp/product/B074JKT894/ref=s9_acsd_al_bw_c_x_5_w?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-2&pf_rd_r=8QQ6V6GB4AV21SXW5RHV&pf_rd_r=8QQ6V6GB4AV21SXW5RHV&pf_rd_t=101&pf_rd_p=1bb8a98d-f692-4d5e-a838-c02bbf5a3479&pf_rd_p=1bb8a98d-f692-4d5e-a838-c02bbf5a3479&pf_rd_i=1292115011",
+    "image": "/images/61RUwaqxcEL._SX757_.jpg",
+    "price": 599.99,
+    "spec": [
+      "21:9 UltraWide Curved QHD IPS Monitor",
+      "sRGB over 99%/Color Calibrated",
+      "USB 3.0 Quick Charge",
+      "Height/Tilt Adjustable Stand",
+      "Screen Split 2.0 (PIP Mode)"
+    ]
+  }
+]

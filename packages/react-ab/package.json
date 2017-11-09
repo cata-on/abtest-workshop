@@ -1,0 +1,15 @@
+{
+  "name": "react-ab",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prop-types": "15.6.0",
+    "react": "16.0.0"
+  },
+  "devDependencies": {
+    "@g4/react-scripts": "1.7.3"
+  }
+}

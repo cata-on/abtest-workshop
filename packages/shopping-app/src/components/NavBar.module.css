@@ -1,0 +1,14 @@
+.navBar {
+  display: flex;
+  align-items: center;
+}
+
+.heading {
+  flex: 1;
+  font-weight: 100;
+  margin: 0;
+}
+
+.link {
+  float: right;
+}

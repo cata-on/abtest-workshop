@@ -32,6 +32,12 @@
   margin-right: 4px;
 }
 
+.productButtonGrayscale {
+  composes: productButton;
+  background-color: #333;
+  color: #fff;
+}
+
 .details {
   padding: 24px;
   background-color: #fff;

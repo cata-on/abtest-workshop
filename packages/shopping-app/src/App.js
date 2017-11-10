@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
+import { default as AbTestProvider } from 'react-ab/Provider';
+
 import products from './data/products.json';
 import ProductList from './components/ProductList';
 import Cart from './components/Cart';
@@ -53,25 +55,27 @@ export default class App extends Component {
   render() {
     return [
       <Overlay key="experimentsOverlay" />,
-      <BrowserRouter key="app">
-        <Switch>
-          <Route
-            exact
-            path="/"
-            render={() => (
-              <ProductList
-                products={this.state.products}
-                onProductAdd={this.handleProductAdd}
-                onProductRemove={this.handleProductRemove}
-              />
-            )}
-          />
-          <Route
-            path="/cart"
-            render={() => <Cart products={this.state.products} />}
-          />
-        </Switch>
-      </BrowserRouter>,
+      <AbTestProvider experiments={this.experiments} key="app">
+        <BrowserRouter>
+          <Switch>
+            <Route
+              exact
+              path="/"
+              render={() => (
+                <ProductList
+                  products={this.state.products}
+                  onProductAdd={this.handleProductAdd}
+                  onProductRemove={this.handleProductRemove}
+                />
+              )}
+            />
+            <Route
+              path="/cart"
+              render={() => <Cart products={this.state.products} />}
+            />
+          </Switch>
+        </BrowserRouter>
+      </AbTestProvider>,
     ];
   }
 }

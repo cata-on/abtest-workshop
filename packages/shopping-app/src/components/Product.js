@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import Experiment from 'react-ab/Experiment';
+import Variant from 'react-ab/Variant';
+
 import Price from './Price';
 import style from './Product.module.css';
+
+import { PRODUCT_ADD_EXPERIMENT, VAT_EXPERIMENT } from '../experiments';
 
 export default class Product extends Component {
   constructor(props) {
@@ -50,23 +55,55 @@ export default class Product extends Component {
             <h3 className={style.title}>{this.props.name}</h3>
             <div>
               <b>Price: </b>
-              {this.props.oldPrice && (
-                <span>
-                  <strike>
-                    <Price>{this.props.oldPrice}</Price>
-                  </strike>&nbsp;
-                </span>
-              )}
-              <Price>{this.props.price}</Price>
+              <Experiment name={VAT_EXPERIMENT.NAME}>
+                <Variant name={VAT_EXPERIMENT.VARIANTS.A} default fallback>
+                  {this.props.oldPrice && (
+                    <span>
+                      <strike>
+                        <Price>{this.props.oldPrice}</Price>
+                      </strike>&nbsp;
+                    </span>
+                  )}
+                  <Price>{this.props.price}</Price>
+                </Variant>
+                <Variant name={VAT_EXPERIMENT.VARIANTS.B}>
+                  {this.props.oldPrice && (
+                    <span>
+                      <strike>
+                        <Price includesVat>{this.props.oldPrice}</Price>
+                      </strike>&nbsp;
+                    </span>
+                  )}
+                  <Price includesVat>{this.props.price}</Price>
+                </Variant>
+              </Experiment>
             </div>
             <div>
-              <button
-                className={style.productButton}
-                onClick={this.handleRemoveFromCart}
-                disabled={this.props.quantity === 0}
-              >
-                Remove
-              </button>
+              <Experiment name={PRODUCT_ADD_EXPERIMENT.NAME}>
+                <Variant
+                  name={PRODUCT_ADD_EXPERIMENT.VARIANTS.A}
+                  default
+                  fallback
+                >
+                  <button
+                    className={style.productButton}
+                    onClick={this.handleRemoveFromCart}
+                    disabled={this.props.quantity === 0}
+                  >
+                    Remove
+                  </button>
+                </Variant>
+                <Variant name={PRODUCT_ADD_EXPERIMENT.VARIANTS.B}>
+                  <button
+                    className={style.productButtonGrayscale}
+                    onClick={this.handleRemoveFromCart}
+                    disabled={this.props.quantity === 0}
+                  >
+                    Remove
+                  </button>
+                </Variant>
+              </Experiment>
+
               <button
                 className={style.productButton}
                 onClick={this.handleAddToCart}

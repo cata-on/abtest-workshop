@@ -2,7 +2,9 @@
 import React from 'react';
 
 // Import Spectacle Core tags
+import CodeSlide from 'spectacle-code-slide';
 import {
+  Spectacle,
   BlockQuote,
   Cite,
   Deck,
@@ -20,18 +22,7 @@ import createTheme from 'spectacle/lib/themes/default';
 // Require CSS
 require('normalize.css');
 
-const theme = createTheme(
-  {
-    primary: 'white',
-    secondary: '#1F2022',
-    tertiary: '#03A9FC',
-    quartenary: '#CECECE',
-  },
-  {
-    primary: 'Montserrat',
-    secondary: 'Helvetica',
-  }
-);
+const theme = createTheme();
 
 export default class Presentation extends React.Component {
   render() {
@@ -41,54 +32,22 @@ export default class Presentation extends React.Component {
         transitionDuration={500}
         theme={theme}
       >
-        <Slide transition={['zoom']} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
-          </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            open the presentation/index.js file to get started
-          </Text>
+        <Slide transition={['zoom']} bgColor="secondary">
+          Hello
         </Slide>
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>
-            Typography
-          </Heading>
-          <Heading size={1} textColor="secondary">
-            Heading 1
-          </Heading>
-          <Heading size={2} textColor="secondary">
-            Heading 2
-          </Heading>
-          <Heading size={3} textColor="secondary">
-            Heading 3
-          </Heading>
-          <Heading size={4} textColor="secondary">
-            Heading 4
-          </Heading>
-          <Heading size={5} textColor="secondary">
-            Heading 5
-          </Heading>
-          <Text size={6} textColor="secondary">
-            Standard text
-          </Text>
-        </Slide>
-        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>
-            Standard List
-          </Heading>
-          <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
-          </List>
-        </Slide>
-        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
-        </Slide>
+        <CodeSlide
+          showLineNumbers={false}
+          transition={[]}
+          lang="js"
+          code={require('./test.js').default}
+          ranges={[
+            { loc: [0, 7], title: 'HelloWorld.js' },
+            { loc: [0, 1], note: 'ES6 import ceremony' },
+            { loc: [2, 5], note: "A simple 'fat arrow' function" },
+            { loc: [6, 7], note: 'Make it the default export' },
+            { loc: [3, 4], note: 'Spooky JSX part' },
+          ]}
+        />
       </Deck>
     );
   }

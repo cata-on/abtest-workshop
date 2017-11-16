@@ -54,6 +54,16 @@ export default class Presentation extends React.Component {
             AB Testing
           </Heading>
           <Text textColor="normal">A team exercise</Text>
+          <Text textColor="normal">
+            <br />
+            <a
+              style={{ color: '#acffed' }}
+              href="https://catalinonutu3.github.io/abtest-workshop"
+            >
+              https://catalinonutu3.github.io/abtest-workshop
+            </a>
+            <br />
+          </Text>
         </Slide>
 
         <Slide transition={[]} bgColor="dark">

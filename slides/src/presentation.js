@@ -57,6 +57,62 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={[]} bgColor="dark">
+          <Heading size={1} fit textColor="accent">
+            Story time
+          </Heading>
+        </Slide>
+
+        <Slide transition={[]} bgColor="dark">
+          <Heading size={1} textColor="accent">
+            Code review
+          </Heading>
+          <List textColor="normal">
+            <ListItem>happens after code was written</ListItem>
+            <ListItem>(a lot of) effort was put into it</ListItem>
+            <ListItem>you have to consider billing the clients</ListItem>
+            <ListItem>
+              I mostly accept the code, mainly looking for{' '}
+              <span style={{ color: '#ed174c' }}>debugger</span> statements,{' '}
+              <span style={{ color: '#ed174c' }}>console.log</span> or other
+              small problems
+            </ListItem>
+            <ListItem>people have feelings (I'm being told)</ListItem>
+            <ListItem>
+              you only need 2 people to approve, won't matter if there is a
+              third, disagreeing
+            </ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={[]} bgColor="dark">
+          <Heading size={1} textColor="accent">
+            Design documents
+          </Heading>
+          <Text textColor="normal">Suggested last night by Rupert</Text>
+        </Slide>
+
+        <Slide transition={[]} bgColor="dark">
+          <Heading size={1} textColor="accent">
+            Mob programming
+          </Heading>
+          <List textColor="normal">
+            <ListItem>brainstorming</ListItem>
+            <ListItem>mocking - fairly cheap</ListItem>
+            <ListItem>encourages people to ask questions</ListItem>
+            <ListItem>
+              most of us will agree before any code is written
+            </ListItem>
+            <ListItem>figure out some "hidden costs"</ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={[]} bgColor="dark">
+          <Heading size={1} fit textColor="accent">
+            Back to our code
+          </Heading>
+        </Slide>
+
+        <Slide transition={[]} bgColor="dark">
           <Heading size={1} textColor="accent">
             Goal
           </Heading>
